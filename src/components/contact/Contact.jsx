@@ -10,7 +10,7 @@ const Contact = () => {
       <motion.h1
         initial={{ y: 150, opacity: 0 }} // Start 50px below with 0 opacity
         whileInView={{ y: 0, opacity: 1 }} // Animate to its natural position with full opacity
-        transition={{ duration: 0.7, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 1 }} 
         
       >

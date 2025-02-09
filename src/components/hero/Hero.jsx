@@ -9,7 +9,8 @@ const Hero = () => {
           <p>
             Hi, I'm a fresh graduate software engineer passionate about building
             web applications with ReactJS and NodeJS. Currently seeking job
-            opportunities, you can check out my portfolio!
+            opportunities, you can check out this site and my github for my
+            recent projects!
           </p>
         </div>
         <div className="about-icons">
@@ -45,29 +46,29 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="swipe" style={{
-            position: "absolute",
-            bottom: "1%",
-            right: "8%",
-            
-            fontFamily: "'Press Start 2P'", // Replace with the font you like
-            fontSize: "20px",
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", // For street-style shadow effect
-       
-            padding: "10px 15px",
-            borderRadius: "10px",
-      }}>
+      <div
+        className="swipe"
+        style={{
+          position: "absolute",
+          bottom: "1%",
+          right: "8%",
+
+          fontFamily: "'Press Start 2P'", // Replace with the font you like
+          fontSize: "20px",
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", // For street-style shadow effect
+
+          padding: "10px 15px",
+          borderRadius: "10px",
+        }}
+      >
         <div
           style={{
-         
             background: "linear-gradient(to right, #ff3cac, #784ba0, #2b86c5)",
             padding: "10px 15px",
             borderRadius: "10px",
-            
-           
           }}
         >
-          <span>Scroll Me!</span>
+          <span>Scroll me!</span>
         </div>
         <svg
           width="64px"

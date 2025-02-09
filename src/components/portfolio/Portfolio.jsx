@@ -3,6 +3,8 @@ import "./portfolio.css";
 import p1 from "../../assets/p1.png";
 import p2 from "../../assets/p2.png";
 import p3 from "../../assets/p3.png";
+import p4 from "../../assets/p4.png";
+
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
@@ -10,38 +12,32 @@ const items = [
   {
     id: 1,
     img: p1,
-    title: "Fulls Stack Blog application",
-    desc: "Lorem ipsum dolor sit, amext consectetur adipisicing elit. Porro et esse dolore recusandae doloremque nihil numquam tempore nam assumenda voluptatem molestiae ea, sequi voluptate ullam est, veritatis rerum impedit explicabo?",
-    link: "/",
+    title: "E-commerce Frontend Application",
+    desc: "A responsive web application for online shopping, featuring product browsing, search functionality, and a smooth user experience.",
+    link: "https://ecommerce-app-tan-alpha.vercel.app/",
   },
   {
     id: 2,
     img: p2,
-    title: "React Blog application",
-    desc: "Lorem ipsum dolor sit, amext consectetur adipisicing elit. Porro et esse dolore recusandae doloremque nihil numquam tempore nam assumenda voluptatem molestiae ea, sequi voluptate ullam est, veritatis rerum impedit explicabo?",
-    link: "/",
+    title: "Poke-Memo",
+    desc: "A React-based memory game where users select pokemon cards, avoiding previously selected ones. It is simple and fun!",
+    link: "https://poke-game-zeta.vercel.app/",
   },
   {
     id: 3,
     img: p3,
-    title: "Expressjs Blog application",
-    desc: "Lorem ipsum dolor sit, amext consectetur adipisicing elit. Porro et esse dolore recusandae doloremque nihil numquam tempore nam assumenda voluptatem molestiae ea, sequi voluptate ullam est, veritatis rerum impedit explicabo?",
-    link: "/",
+    title: "Resume/CV Generator",
+    desc: "A web-based tool allowing users to create professional resumes by filling in their information dynamically.",
+    link: "https://ui-projects-tawny.vercel.app/",
   },
   {
     id: 4,
-    img: p3,
-    title: "Expressjs Blog application",
-    desc: "Lorem ipsum dolor sit, amext consectetur adipisicing elit. Porro et esse dolore recusandae doloremque nihil numquam tempore nam assumenda voluptatem molestiae ea, sequi voluptate ullam est, veritatis rerum impedit explicabo?",
-    link: "/",
+    img: p4,
+    title: "UAV Management System Backend Application",
+    desc: "A backend system designed for managing UAVs, teams are able to produce UAV parts and assemble aircrafts.",
+    link: "https://github.com/kyuceak/uav-rental",
   },
-  {
-    id: 5,
-    img: p3,
-    title: "Expressjs Blog application",
-    desc: "Lorem ipsum dolor sit, amext consectetur adipisicing elit. Porro et esse dolore recusandae doloremque nihil numquam tempore nam assumenda voluptatem molestiae ea, sequi voluptate ullam est, veritatis rerum impedit explicabo?",
-    link: "/",
-  },
+ 
 ];
 
 const imgVariants = {
@@ -97,8 +93,8 @@ const ListItem = ({ item }) => {
        className="p-text">
         <motion.h1  variants={textVariants}>{item.title}</motion.h1>
         <motion.p  variants={textVariants}>{item.desc}</motion.p>
-        <motion.a  variants={textVariants}href={item.link}>
-          <button>View project</button>
+        <motion.a  variants={textVariants}href={item.link} target="_blank">
+          <button>See Demo</button>
         </motion.a>
       </motion.div>
     </div>
@@ -156,7 +152,7 @@ const Portfolio = () => {
       <section></section>
       <section></section>
       <section></section>
-      <section></section>
+
       <div className="progress">
        { isPortfolioInView && <svg width="100%" height="100%" viewBox="0 0 160 160">
             <circle cx="80" cy="80" r="70" fill="none" stroke="#ddd" strokeWidth={20}></circle>
