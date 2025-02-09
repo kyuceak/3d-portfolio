@@ -1,0 +1,51 @@
+.hero{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+.hsection{
+    background-color: rgb(47, 47, 47);
+   
+}
+
+.about{
+    background: white;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 60%;
+    min-width: 600px;
+
+    height: auto;
+    border-radius: 1rem;
+}
+
+.about-text h2 {
+    margin: 0px;
+    margin-bottom: 0.5rem;
+  }
+  
+.about-icons {
+    cursor: pointer;
+    display: flex;
+    
+    justify-content: flex-end;
+    gap: 1rem;
+    
+  
+
+  }
+  
+  .about-icons svg {
+    width: 35px;
+    height: 35px;
+  }
