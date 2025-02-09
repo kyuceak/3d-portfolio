@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 60%;
+    max-width: 55%;
     min-width: 600px;
 
     height: auto;
@@ -32,6 +32,10 @@
 .about-text h2 {
     margin: 0px;
     margin-bottom: 0.5rem;
+  }
+
+  .about-text{
+    font-size: 1.7rem;
   }
   
 .about-icons {
@@ -46,6 +50,29 @@
   }
   
   .about-icons svg {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
+
+  .swipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+  }
+
+
+  @keyframes opacityPulse {
+    0%, 100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.0; /* Adjust this value to control how transparent the SVG gets */
+    }
+  }
+  
+  .pulse {
+    animation: opacityPulse 1.6s infinite;
+  }
+  

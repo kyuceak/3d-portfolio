@@ -1,0 +1,13 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0c0317, #3f1339, #510e78);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.contact h1 {
+  font-size: 5rem;
+}
