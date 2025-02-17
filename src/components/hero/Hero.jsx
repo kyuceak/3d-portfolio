@@ -8,7 +8,7 @@ const Hero = () => {
           <h2>About Me</h2>
           <p>
             Hi, I'm a fresh graduate software engineer passionate about building
-            web applications with ReactJS and NodeJS. Currently seeking job
+            web applications. Currently seeking job
             opportunities, you can check out this site and my github for my
             recent projects!
           </p>
